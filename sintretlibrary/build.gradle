@@ -1,4 +1,27 @@
 apply plugin: 'com.android.library'
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'sintret-library'
+
+    publishedGroupId = 'com.sintret.library'
+    libraryName = 'SintretLibrary'
+    artifact = 'sintret-library'
+
+    libraryDescription = 'Libraries for android developer'
+
+    siteUrl = 'https://github.com/sintret/Library'
+    gitUrl = 'https://github.com/sintret/Library.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'sintret'
+    developerName = 'Andy Fitria Rosmin'
+    developerEmail = 'sintert@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 
 android {
     compileSdkVersion 23
@@ -21,6 +44,5 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.mcxiaoke.volley:library:1.0.19'
 }
